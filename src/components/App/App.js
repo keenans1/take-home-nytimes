@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './App.css';
 import Header from '../Header/Header';
 import ArticleList from '../ArticleList/ArticleList';
+import { Route } from 'react-router-dom';
 
 const  App = () => {
 
@@ -17,7 +18,7 @@ const  App = () => {
   return (
     <main className="App">
       <Header/>
-      <ArticleList articles={articles}/>
+      <Route exact path='/' render={() => <ArticleList articles={articles}/>}/>
     </main>
   );
 }

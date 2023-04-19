@@ -5,7 +5,7 @@ const ArticleList = ({articles}) => {
 
     const allArticles = articles.map(article => {
         return (
-            <Article data={article}/>
+            <Article key={article.title} data={article}/>
         )
     })
 

@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <h2>NY Times: Cars Edition</h2>
             <div>
-                <label for="search">Search: </label>
+                <label htmlFor="search">Search: </label>
                 <input type="search" id="search" name="search"/>
             </div>
         </header>
