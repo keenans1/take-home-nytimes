@@ -4,6 +4,7 @@ import './App.css';
 import Header from '../Header/Header';
 import ArticleList from '../ArticleList/ArticleList';
 import { Route } from 'react-router-dom';
+import ArticleDetail from '../ArticleDetail/ArticleDetail';
 
 const  App = () => {
 
@@ -19,8 +20,14 @@ const  App = () => {
     <main className="App">
       <Header/>
       <Route exact path='/' render={() => <ArticleList articles={articles}/>}/>
+      <Route path='/:article' render={({match}) => {
+        console.log(match.params)
+        return (
+          <ArticleDetail/>
+        )
+      }}/>
     </main>
-  );
+  )
 }
 
 export default App
