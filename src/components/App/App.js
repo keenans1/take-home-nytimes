@@ -1,12 +1,19 @@
+import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import Header from '../Header/Header';
+import ArticleList from '../ArticleList/ArticleList';
 
-function App() {
+const  App = () => {
+
+  const [articles, setArticles] = useState([])
+
   return (
-    <div className="App">
+    <main className="App">
       <Header/>
-    </div>
+      <ArticleList articles={articles}/>
+    </main>
   );
 }
 
-export default App;
+export default App
