@@ -20,12 +20,7 @@ const  App = () => {
     <main className="App">
       <Header/>
       <Route exact path='/' render={() => <ArticleList articles={articles}/>}/>
-      <Route path='/:article' render={({match}) => {
-        console.log(match.params)
-        return (
-          <ArticleDetail/>
-        )
-      }}/>
+      <Route path='/:article' render={({match}) => <ArticleDetail articles={articles} clicked={match.params.article}/>}/>
     </main>
   )
 }
