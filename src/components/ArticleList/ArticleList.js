@@ -1,8 +1,16 @@
 import React from "react";
+import Article from "../Article/Article";
 
-const ArticleList = () => {
+const ArticleList = ({articles}) => {
+
+    const allArticles = articles.map(article => {
+        return (
+            <Article data={article}/>
+        )
+    })
+
     return (
-        <div>list of articles</div>
+        <div>{allArticles}</div>
     )
 }
 

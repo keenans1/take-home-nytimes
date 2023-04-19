@@ -1,8 +1,8 @@
 import React from "react";
 
-const Article = () => {
+const Article = ({data}) => {
     return (
-        <div>sinlge article</div>
+        <div>{data.title}</div>
     )
 }
 
