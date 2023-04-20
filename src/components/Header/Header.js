@@ -21,7 +21,7 @@ const Header = props => {
 
     return (
         <header>
-            <Link to='/'>
+            <Link to='/' className="all-links">
                 <h2>NY Times: Cars Edition</h2>
             </Link>
             <form>

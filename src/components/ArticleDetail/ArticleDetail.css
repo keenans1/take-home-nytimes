@@ -1,8 +1,14 @@
-img {
-    height: 100px;
-    width: 100px;
+.article-detail-container {
+    display: flex;
 }
 
-ul {
-    list-style-type: none;
+
+.detail-image {
+    height: 85vh;
+    width: 50%;
+}
+
+.info-container {
+    height: 100%;
+    width: 50%;
 }

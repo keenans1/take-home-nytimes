@@ -1,5 +1,6 @@
 import React from "react";
 import Article from "../Article/Article";
+import './ArticleList.css'
 
 const ArticleList = ({articles}) => {
 
@@ -10,7 +11,7 @@ const ArticleList = ({articles}) => {
     })
 
     return (
-        <div>{allArticles}</div>
+        <section className="article-container">{allArticles}</section>
     )
 }
 

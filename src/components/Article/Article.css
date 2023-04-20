@@ -1,3 +1,21 @@
 .article-card {
     border: 1px solid black;
+    width: 30%;
+}
+
+.article-image {
+    height: 25%;
+    width: 30%;
+}
+
+@media screen and (max-width: 1086px) {
+    .article-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .article-card {
+        width: 90%;
+    }
 }
