@@ -17,7 +17,9 @@ const ArticleDetail = (props) => {
         )
     } else {
         return (
-            <div>oops!</div>
+            <div>
+                <p>This article is unavailable.</p>
+            </div>
         )
     }
 
