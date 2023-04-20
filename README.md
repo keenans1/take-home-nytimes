@@ -1,5 +1,5 @@
 # Overview
-The purpose of this website is to appeal to two niche audiences. The first being an amateur brewer who wants to know more about the ingredients and specifics about certain brews. The second being foodies who could care less about the beers information, but just want to know what foods match well to the beers.
+This is a practice take home code challenge eval. The limit on this project was 8 hours. The information was pulled from the NY Times public API; specifically, the automobiles endpoint.
 
 ## Technologies Used
 <div>
@@ -12,7 +12,7 @@ The purpose of this website is to appeal to two niche audiences. The first being
 </div>
 
 ## Setup Instructions
-1. Fork the Repo from the [Repository](https://github.com/keenans1/biergarten)
+1. Fork the Repo from the [Repository](https://github.com/keenans1/take-home-nytimes)
 2. Clone the repo
    ```sh
    git clone git@github.com:awirth224/citysearch.git
@@ -38,8 +38,3 @@ The purpose of this website is to appeal to two niche audiences. The first being
 
 ## Contributors
 * [Keenan Southall](https://github.com/keenans1)
-
-## Future Features
-
-- Add a remove from favorites button to each favorite beer
-- Add a sort dropdown to allow a user to sort the beers how they wish
