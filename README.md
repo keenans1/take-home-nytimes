@@ -1,5 +1,3 @@
-# Getting Started with Create React App
-
 # Overview
 The purpose of this website is to appeal to two niche audiences. The first being an amateur brewer who wants to know more about the ingredients and specifics about certain brews. The second being foodies who could care less about the beers information, but just want to know what foods match well to the beers.
 
