@@ -9,6 +9,7 @@ import ArticleDetail from '../ArticleDetail/ArticleDetail';
 const  App = () => {
 
   const [articles, setArticles] = useState([])
+  const [filteredArticles, setFilteredArticles] = useState([])
 
   useEffect(() => {
     fetch('https://api.nytimes.com/svc/topstories/v2/automobiles.json?api-key=A2CM4WWPQB2nTtRBnsAojUmnyWQ3jHJY')
@@ -16,10 +17,14 @@ const  App = () => {
       .then(data => setArticles(data.results))
   }, [])
 
+  useEffect(() => {
+  }, [filteredArticles])
+
   return (
     <main className="App">
-      <Header/>
-      <Route exact path='/' render={() => <ArticleList articles={articles}/>}/>
+      <Header filter={setFilteredArticles} articles={articles}/>
+      {filteredArticles.length === 0 ? <Route exact path='/' render={() => <ArticleList articles={articles}/>}/> :
+      <Route exact path='/' render={() => <ArticleList articles={filteredArticles}/>}/>}
       <Route path='/:article' render={({match}) => <ArticleDetail articles={articles} clicked={match.params.article}/>}/>
     </main>
   )

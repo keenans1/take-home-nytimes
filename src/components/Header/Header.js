@@ -2,16 +2,32 @@ import React from "react";
 import './Header.css'
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = props => {
+
+    const handleChange = e => {
+
+        const lowerCaseSearch = e.target.value.toLowerCase()
+
+        const filtered = props.articles
+        .filter(article => {
+            const lowerCaseTitle = article.title.toLowerCase()
+            if (lowerCaseTitle.includes(lowerCaseSearch)) {
+            return article
+            }
+        })
+
+        props.filter(filtered)
+    }
+
     return (
         <header>
             <Link to='/'>
                 <h2>NY Times: Cars Edition</h2>
             </Link>
-            <div>
+            <form>
                 <label htmlFor="search">Search: </label>
-                <input type="search" id="search" name="search"/>
-            </div>
+                <input type="search" id="search" name="search" onChange={e => handleChange(e)}/>
+            </form>
         </header>
     )
 }
