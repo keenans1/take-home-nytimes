@@ -1,5 +1,6 @@
 .article-detail-container {
     display: flex;
+    margin-top: 2%;
 }
 
 
@@ -11,4 +12,11 @@
 .info-container {
     height: 100%;
     width: 50%;
+}
+
+@media screen and (max-width: 550px) {
+    .article-detail-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }

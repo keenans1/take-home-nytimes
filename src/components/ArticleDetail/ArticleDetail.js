@@ -9,12 +9,12 @@ const ArticleDetail = (props) => {
     if (clickedArticle) {
         return (
             <section className="article-detail-container">
-                <img src={clickedArticle.multimedia[0].url} className="detail-image"/>
                 <div className="info-container">
-                    <p>{clickedArticle.title}</p>
+                    <h2>{clickedArticle.title}</h2>
                     <a href={clickedArticle.url} target="_blank" className="all-links">Read the article here</a>
-                    <p>{clickedArticle.multimedia[0].caption}</p>
+                    <h3>{clickedArticle.multimedia[0].caption}</h3>
                 </div>
+                <img src={clickedArticle.multimedia[0].url} className="detail-image"/>
             </section>
         )
     } else {
