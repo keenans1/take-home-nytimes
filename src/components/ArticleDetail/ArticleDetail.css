@@ -1,6 +1,6 @@
 .article-detail-container {
     display: flex;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 
@@ -12,6 +12,10 @@
 .info-container {
     height: 100%;
     width: 50%;
+}
+
+.article-link {
+    color: blue;
 }
 
 @media screen and (max-width: 550px) {
