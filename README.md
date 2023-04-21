@@ -14,7 +14,7 @@ This is a practice take home code challenge eval. The limit on this project was 
 1. Fork the Repo from the [Repository](https://github.com/keenans1/take-home-nytimes)
 2. Clone the repo
    ```sh
-   git clone git@github.com:awirth224/citysearch.git
+   git@github.com:keenans1/take-home-nytimes.git 
    ```
 3. Install NPM packages
    ```sh
