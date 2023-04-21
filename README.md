@@ -33,7 +33,7 @@ This is a practice take home code challenge eval. The limit on this project was 
 [NY Times: Cars Edition](https://take-home-nytimes.vercel.app/)
 
 ## GIF
-![BierGarten](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTc3ODhkN2JmZDRlZGQ2YjdlYzU5YWJjNDIxZGJlOGJjNzk2M2VlMSZjdD1n/23zYz8xQYF9eHnKorU/giphy.gif)
+![NY Times]()
 
 ## Contributors
 * [Keenan Southall](https://github.com/keenans1)
