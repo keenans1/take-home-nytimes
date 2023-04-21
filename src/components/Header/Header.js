@@ -26,7 +26,7 @@ const Header = props => {
             </Link>
             <form>
                 <label htmlFor="search">Search: </label>
-                <input type="search" id="search" name="search" onChange={e => handleChange(e)}/>
+                <input type="search" id="search" name="search" autoComplete='off' onChange={e => handleChange(e)}/>
             </form>
         </header>
     )
